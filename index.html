@@ -12,71 +12,72 @@
 		<link rel="stylesheet" href="./assets/css/style.css" />
 	</head>
 	<body>
-		<header></header>
-		<main>
-			<h1>Simon says</h1>
-			<div id="simon"></div>
-			<form id="form">
-				<h2>Inserisci i numeri</h2>
-				<div class="row">
-					<div class="form-group col-auto">
-						<label for="number1">Numero 1</label>
-						<input
-							type="number"
-							class="form-control"
-							name="number1"
-							id="number1"
-							placeholder="Inserisci il primo numero"
-							required />
+		<main class="container mt-5">
+			<div class="card bg-info">
+				<h1 class="text-center py-2">Simon says</h1>
+				<h2 id="simon" class="text-center"></h2>
+				<form id="form" class="rounded-2 p-3">
+					<h2>Inserisci i numeri</h2>
+					<div class="row">
+						<div class="form-group col-auto">
+							<label for="number1">Numero 1</label>
+							<input
+								type="number"
+								class="form-control"
+								name="number1"
+								id="number1"
+								placeholder="Inserisci il primo numero"
+								required />
+						</div>
+						<div class="form-group col-auto">
+							<label for="number2">Numero 2</label>
+							<input
+								type="number"
+								class="form-control"
+								name="number2"
+								id="number2"
+								placeholder="Inserisci il primo numero"
+								required />
+						</div>
+						<div class="form-group col-auto">
+							<label for="number3">Numero 3</label>
+							<input
+								type="number"
+								class="form-control"
+								name="number3"
+								id="number3"
+								placeholder="Inserisci il primo numero"
+								required />
+						</div>
+						<div class="form-group col-auto">
+							<label for="number4">Numero 4</label>
+							<input
+								type="number"
+								class="form-control"
+								name="number4"
+								id="number4"
+								placeholder="Inserisci il primo numero"
+								required />
+						</div>
+						<div class="form-group col-auto">
+							<label for="number5">Numero 5</label>
+							<input
+								type="number"
+								class="form-control"
+								name="number5"
+								id="number5"
+								placeholder="Inserisci il primo numero"
+								required />
+						</div>
+						<div class="form-group py-2">
+							<button id="submit" class="btn btn-primary">Controlla</button>
+						</div>
 					</div>
-					<div class="form-group col-auto">
-						<label for="number2">Numero 2</label>
-						<input
-							type="number"
-							class="form-control"
-							name="number2"
-							id="number2"
-							placeholder="Inserisci il primo numero"
-							required />
-					</div>
-					<div class="form-group col-auto">
-						<label for="number3">Numero 3</label>
-						<input
-							type="number"
-							class="form-control"
-							name="number3"
-							id="number3"
-							placeholder="Inserisci il primo numero"
-							required />
-					</div>
-					<div class="form-group col-auto">
-						<label for="number4">Numero 4</label>
-						<input
-							type="number"
-							class="form-control"
-							name="number4"
-							id="number4"
-							placeholder="Inserisci il primo numero"
-							required />
-					</div>
-					<div class="form-group col-auto">
-						<label for="number5">Numero 5</label>
-						<input
-							type="number"
-							class="form-control"
-							name="number5"
-							id="number5"
-							placeholder="Inserisci il primo numero"
-							required />
-					</div>
-					<div>
-						<button id="submit" class="btn btn-primary">Controlla</button>
-					</div>
-				</div>
-			</form>
-			<div id="result"></div>
+				</form>
+			</div>
+			<div id="result" class="text-center bg-warning rounded-2"></div>
 		</main>
-		<footer></footer>
+
 		<script src="./assets/js/script.js"></script>
 	</body>
 </html>
