@@ -35,7 +35,7 @@ setTimeout(function () {
 	simonEl.style.display = 'none'
 
 	formEl.style.display = 'block'
-}, 3000)
+}, 30000)
 
 //e inserire 5 numeri da confrontare
 formEl.addEventListener('submit', function (event) {
