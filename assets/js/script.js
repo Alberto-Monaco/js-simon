@@ -33,6 +33,7 @@ formEl = document.getElementById('form')
 
 setTimeout(function () {
 	simonEl.style.display = 'none'
+
 	formEl.style.display = 'block'
 }, 3000)
 
