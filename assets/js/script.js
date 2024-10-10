@@ -28,7 +28,7 @@ simonEl = document.getElementById('simon')
 simonEl.innerHTML = number_casual
 
 formEl = document.getElementById('form')
-
+resultEl = document.getElementById('result')
 //dopo 30 secondi nascondere
 
 setTimeout(function () {
@@ -38,5 +38,31 @@ setTimeout(function () {
 }, 3000)
 
 //e inserire 5 numeri da confrontare
-
+formEl.addEventListener('submit', function (event) {
+	event.preventDefault()
+	let input1 = Number(document.getElementById('number1').value)
+	let input2 = Number(document.getElementById('number2').value)
+	let input3 = Number(document.getElementById('number3').value)
+	let input4 = Number(document.getElementById('number4').value)
+	let input5 = Number(document.getElementById('number5').value)
+	let number_win = []
+	for (let i = 0; i < number_casual.length; i++) {
+		if (
+			input1 === number_casual[i] ||
+			input2 === number_casual[i] ||
+			input3 === number_casual[i] ||
+			input4 === number_casual[i] ||
+			input5 === number_casual[i]
+		) {
+			number_win.push(number_casual[i])
+		}
+	}
+	console.log(number_win)
+	formEl.style.display = 'none'
+	if (number_win.length === 0) {
+		resultEl.innerHTML = 'Non hai indovinato nessun numero'
+	} else {
+		resultEl.innerHTML = `Hai indovinato ${number_win.length} numeri, i numeri che hai indovinato sono ${number_win}`
+	}
+})
 //controllare i numeri e far apparire a schermo quanti numeri sono stati indovinati e  quali
