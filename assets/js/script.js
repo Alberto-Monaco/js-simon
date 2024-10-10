@@ -26,11 +26,19 @@ console.log(number_casual)
 //dati 5 numeri visualizzare a schermo per 30 secondi
 simonEl = document.getElementById('simon')
 simonEl.innerHTML = number_casual
-//dopo 30 secondi nascondere
-const clock = setInterval(function () {
-	simonEl.style.display = 'none'
-}, 30000)
 
-//e inserire 5 numeri casuali
+//dopo 30 secondi nascondere
+
+setTimeout(function () {
+	simonEl.style.display = 'none'
+	let user_number = []
+	user_number[0] = Number(prompt('Inserisci il primo numero'))
+	user_number[1] = Number(prompt('Inserisci il secondo numero'))
+	user_number[2] = Number(prompt('Inserisci il terzo numero'))
+	user_number[3] = Number(prompt('Inserisci il quarto numero'))
+	user_number[4] = Number(prompt('Inserisci il quinto numero'))
+}, 3000)
+
+//e inserire 5 numeri da confrontare
 
 //controllare i numeri e far apparire a schermo quanti numeri sono stati indovinati e  quali
