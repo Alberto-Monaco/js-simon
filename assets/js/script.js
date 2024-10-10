@@ -12,8 +12,8 @@ Pensate prima in italiano.
 Dividete in piccoli problemi la consegna.
 Individuate gli elementi di cui avete bisogno per realizzare il programma.
 Immaginate la logica come fosse uno snack: "Dati 2 array di numeri, indica quali e quanti numeri ci sono in comune tra i due array"*/
-
-//funzione per generare numeri random
+//------------------------------------------------------------------------------------------------------------
+//dammi 5 numeri casuali
 function random(min, max) {
 	return Math.floor(Math.random() * (max - min + 1) + min)
 }
@@ -22,3 +22,15 @@ for (let i = 0; i < 5; i++) {
 	number_casual[i] = random(1, 100)
 }
 console.log(number_casual)
+
+//dati 5 numeri visualizzare a schermo per 30 secondi
+simonEl = document.getElementById('simon')
+simonEl.innerHTML = number_casual
+//dopo 30 secondi nascondere
+const clock = setInterval(function () {
+	simonEl.style.display = 'none'
+}, 30000)
+
+//e inserire 5 numeri casuali
+
+//controllare i numeri e far apparire a schermo quanti numeri sono stati indovinati e  quali
