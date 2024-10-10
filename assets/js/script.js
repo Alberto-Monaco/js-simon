@@ -60,9 +60,9 @@ formEl.addEventListener('submit', function (event) {
 	console.log(number_win)
 	formEl.style.display = 'none'
 	if (number_win.length === 0) {
-		resultEl.innerHTML = 'Non hai indovinato nessun numero'
+		resultEl.innerHTML = `<h1>Non hai indovinato nessun numero</h1>`
 	} else {
-		resultEl.innerHTML = `Hai indovinato ${number_win.length} numeri, i numeri che hai indovinato sono ${number_win}`
+		resultEl.innerHTML = `<h1>Hai indovinato ${number_win.length} numeri, i numeri che hai indovinato sono ${number_win}</h1>`
 	}
 })
 //controllare i numeri e far apparire a schermo quanti numeri sono stati indovinati e  quali
