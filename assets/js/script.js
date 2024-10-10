@@ -27,16 +27,13 @@ console.log(number_casual)
 simonEl = document.getElementById('simon')
 simonEl.innerHTML = number_casual
 
+formEl = document.getElementById('form')
+
 //dopo 30 secondi nascondere
 
 setTimeout(function () {
 	simonEl.style.display = 'none'
-	let user_number = []
-	user_number[0] = Number(prompt('Inserisci il primo numero'))
-	user_number[1] = Number(prompt('Inserisci il secondo numero'))
-	user_number[2] = Number(prompt('Inserisci il terzo numero'))
-	user_number[3] = Number(prompt('Inserisci il quarto numero'))
-	user_number[4] = Number(prompt('Inserisci il quinto numero'))
+	formEl.style.display = 'block'
 }, 3000)
 
 //e inserire 5 numeri da confrontare
